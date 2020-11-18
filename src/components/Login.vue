@@ -31,8 +31,8 @@ export default {
         return {
             //这是登录表单的数据绑定对象
             loginForm:{
-                username:'',
-                password:''
+                username:'admin',
+                password:'123456'
             },
             //这是表单的验证规则对象
             loginFormRules:{
@@ -56,10 +56,10 @@ export default {
       //为了简化promise里的数据，我们用async 修饰方法， 用await 接受数值。
       login(){
         this.$refs.loginFormRef.validate(async (vaild) => {
-          console.log(vaild);
+          // console.log(vaild);
           if(!vaild) return;
            const {data}= await this.$http.post('login',this.loginForm);   //解构赋值的运用。直接一手抓data
-           console.log(data);
+          //  console.log(data);
 
            if(data.meta.status !== 200){
              return this.$message.error('登录失败啦o(╥﹏╥)o');
