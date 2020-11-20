@@ -3,6 +3,8 @@ html,body,#app {
     height: 100%;
     margin: 0;
     padding: 0;
+    /* 防止浏览器 分辨率过小 把东西挤到第二行 */
+    min-width: 1366px;
 }
 .el-breadcrumb {
     margin-bottom: 15px;
