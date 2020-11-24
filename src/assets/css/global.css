@@ -19,3 +19,12 @@ html,body,#app {
 .el-pagination {
     margin-top: 20px;
 }
+
+
+/* 解决了级联选择器长度过长的问题。 */
+.el-cascader__dropdown {
+    height: 200px;
+  }
+  .el-cascader-panel {
+    height: 200px;
+  }
