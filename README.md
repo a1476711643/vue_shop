@@ -1,4 +1,5 @@
 # vue_shop
+「The Beginning」
 
 ## Project setup
 ```
